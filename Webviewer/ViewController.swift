@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var urlTextField: UITextField!
+    @IBAction func goButton(_ sender: UIButton) {
+       let url = goOrSearchUrl(urlTextField.text!)
+        print(url)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
